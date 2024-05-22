@@ -15,6 +15,5 @@ function father(a, b, callback) {
 
 father(10, 5, sum);
 father(20, 10, subtract);
-father(30, 15, sum);
 
 console.log(numbersList);
