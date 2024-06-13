@@ -1,12 +1,10 @@
-const runTimeOut = () => {
-    const promise = new Promise((resolve) => {
-        setTimeout(function () {
-            resolve();
-        }, 2000);
-    });
+//Convierte la siguiente promesa para esperar a ejecutar el console usando async-await.
 
-    promise.then(() => {
-        console.log('Time out!');
+const runTimeOut = async () => {
+    await new Promise((resolve) => {
+        setTimeout(function () {
+            resolve(console.log('Time out!'));
+        }, 2000);
     });
 };
 
